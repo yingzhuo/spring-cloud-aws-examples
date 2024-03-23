@@ -1,5 +1,9 @@
 # cloud-aws-lambda
 
+## 参考资料
+
+* [spring-cloud-function 官方文档](https://docs.spring.io/spring-cloud-function/reference/spring-cloud-function/introduction.html)
+
 ## 注意事项
 
 ### (1) 环境变量
