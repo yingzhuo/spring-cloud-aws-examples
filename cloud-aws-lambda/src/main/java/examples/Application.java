@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 import java.io.InputStream;
-import java.util.function.Function;
+import java.util.function.Consumer;
 
 @SpringBootApplication
 public class Application {
@@ -21,9 +21,7 @@ public class Application {
     }
 
     @Bean
-    public Function<InputStream, String> mainHandler(
-            final ApplicationContext applicationContext
-    ) {
+    public Consumer<InputStream> mainHandler(final ApplicationContext applicationContext) {
         return new MainHandler(applicationContext);
     }
 

@@ -7,24 +7,20 @@ import org.apache.commons.io.IOUtils;
 import org.springframework.context.ApplicationContext;
 
 import java.io.InputStream;
-import java.util.function.Function;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 @Slf4j
 @RequiredArgsConstructor
-public class MainHandler implements Function<InputStream, String> {
-
-    private static final String OK = "OK";
+public class MainHandler implements java.util.function.Consumer<InputStream> {
 
     private final ApplicationContext applicationContext;
 
     @Override
     @SneakyThrows
-    public String apply(InputStream inputStream) {
+    public void accept(InputStream inputStream) {
         log.info("ApplicationContext Type = {}", applicationContext.getClass().getName());
         log.info("Message = {}", IOUtils.toString(inputStream, UTF_8));
-        return OK;
     }
 
 }

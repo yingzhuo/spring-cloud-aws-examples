@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    aws:
+      region:
+        static: "us-west-2" # 俄勒冈
+      credentials:
+        access-key: "my-access-key"
+        secret-key: "my-secret-key"
+      dynamodb:
+        enabled: true
