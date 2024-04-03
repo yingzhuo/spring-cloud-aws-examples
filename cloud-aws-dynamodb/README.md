@@ -8,7 +8,7 @@
 
 ```java
 // 创建对象
-final var cp=ContactPerson.builder()
+final var cp = ContactPerson.builder()
         .pk("1")
         .sk("1")
         .name("应卓")
@@ -23,7 +23,7 @@ final var cp=ContactPerson.builder()
 
 ```java
 // 查找对象
-final var cp=template.load(
+final var cp = template.load(
         Key.builder()
         .partitionValue("1")
         .sortValue("1")
@@ -41,7 +41,7 @@ template.delete(Key.builder()
 
 ```java
 // 更新对象
-var cp=ContactPerson.builder()
+var cp = ContactPerson.builder()
         .pk("1")
         .sk("1")
         .name("应卓")
@@ -51,3 +51,8 @@ var cp=ContactPerson.builder()
 
         cp=template.update(cp);
 ```
+
+### 其他
+
+* 关于`DynamoDbBean`到表名的映射问题。可以通过自己实现`DynamoDbTableNameResolver`解决。这个Bean加入`ApplicationContext`即可。
+本例中有一个实现的示范。
