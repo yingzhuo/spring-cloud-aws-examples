@@ -36,13 +36,6 @@
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
-
-        <dependency>
-            <groupId>com.github.yingzhuo</groupId>
-            <artifactId>spring-turbo</artifactId>
-            <version>3.2.4-SNAPSHOT</version>
-        </dependency>
-
     </dependencies>
 
 </project>

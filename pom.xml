@@ -19,8 +19,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <spring.boot.version>3.2.4</spring.boot.version>
-        <spring.cloud.version>2023.0.0</spring.cloud.version>
-        <lombok.version>1.18.30</lombok.version>
+        <spring.cloud.version>2023.0.1</spring.cloud.version>
+        <spring.cloud.aws.version>3.1.1</spring.cloud.aws.version>
+        <lombok.version>1.18.32</lombok.version>
     </properties>
 
     <dependencyManagement>
@@ -47,7 +48,7 @@
             <dependency>
                 <groupId>io.awspring.cloud</groupId>
                 <artifactId>spring-cloud-aws-dependencies</artifactId>
-                <version>3.1.1</version>
+                <version>${spring.cloud.aws.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
