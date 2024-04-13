@@ -8,6 +8,7 @@
     <artifactId>spring-cloud-aws-examples</artifactId>
     <version>0.1.0</version>
     <modules>
+        <module>aws-dynamodb-sequential-id-generator</module>
         <module>cloud-aws-lambda</module>
         <module>cloud-aws-dynamodb</module>
     </modules>

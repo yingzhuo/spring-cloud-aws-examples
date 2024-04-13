@@ -1,7 +1,11 @@
 ## spring-cloud-aws-examples
 
-* [cloud-aws-lambda](/cloud-aws-lambda)
-* [cloud-aws-dynamodb](/cloud-aws-dynamodb)
+* 关于 `Lambda`
+  * [cloud-aws-lambda](/cloud-aws-lambda)
+
+* 关于 `DynamoDB`
+  * [cloud-aws-dynamodb](/cloud-aws-dynamodb)
+  * [aws-dynamodb-sequential-id-generator](/aws-dynamodb-sequential-id-generator)
 
 ## 参考资料
 
