@@ -10,10 +10,6 @@ import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author Bill Ying
- * @since 0.1.3
- */
 @RequiredArgsConstructor
 @SuppressWarnings("ConstantConditions")
 public class SequentialIdGeneratorImpl implements SequentialIdGenerator {
